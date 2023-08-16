@@ -151,6 +151,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen>
   }
 
   List<Widget> _buildSliderPages() {
+    /// slider widgets
     return [
       SizedBox(
         child: Padding(
