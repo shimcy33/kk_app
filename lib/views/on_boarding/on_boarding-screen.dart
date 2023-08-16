@@ -60,7 +60,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen>
           child: Column(
             children: [
               SizedBox(
-                height: 500.h,
+                height: 450.h,
                 child: PageView(
                   controller: _pageController,
                   children: _buildSliderPages(),
@@ -68,8 +68,6 @@ class _OnBoardingScreenState extends State<OnBoardingScreen>
                     setState(
                       () {
                         activeIndex = index;
-                        print(activeIndex);
-                        //When page change, start the controller
                       },
                     );
                   },
@@ -78,7 +76,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen>
               Column(
                 children: [
                   SizedBox(
-                    height: 20.h,
+                    height: 44.h,
                   ),
                   DotsIndicator(
                     dotsCount: 3,
@@ -89,7 +87,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen>
                     ),
                   ),
                   SizedBox(
-                    height: 40.h,
+                    height: 34.h,
                   ),
                   SizedBox(
                     width: context.sw() - 130.w,
@@ -129,7 +127,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen>
                             style: FontPalette.white14)),
                   ),
                   SizedBox(
-                    height: 60.h,
+                    height: 40.h,
                   ),
                   InkWell(
                     onTap: () {},
@@ -155,7 +153,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen>
     return [
       SizedBox(
         child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 30.w),
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -165,7 +163,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen>
                 ),
                 Image.asset(AssetConstants.onBoardSmile,
                     height: 143.h, width: context.sw()),
-                SizedBox(height: 30.h),
+                SizedBox(height: 73.h),
                 RichText(
                     text: TextSpan(//style for all textspan
                         children: [
@@ -173,23 +171,29 @@ class _OnBoardingScreenState extends State<OnBoardingScreen>
                       text: StringConstants.earn,
                       style: FontPalette.green28W500),
                   const TextSpan(
-                    text: "",
+                    text: " ",
                   ),
                   TextSpan(
                       text: StringConstants.smile,
                       style: FontPalette.red36W700),
                 ])),
-                Text(StringConstants.everyTimeYouSpend,
-                    style: FontPalette.green28W500),
-                SizedBox(height: 20.h),
-                Text(StringConstants.dummyData4,
-                    textAlign: TextAlign.center, style: FontPalette.grey18W300),
+                Text(
+                  StringConstants.everyTimeYouSpend,
+                  style: FontPalette.green28W500,
+                  textAlign: TextAlign.center,
+                ),
+                SizedBox(height: 23.h),
+                Padding(
+                  padding:  EdgeInsets.symmetric(horizontal: 10.w),
+                  child: Text(StringConstants.dummyData4,
+                      textAlign: TextAlign.center, style: FontPalette.grey18W300),
+                ),
               ],
             )),
       ),
       SizedBox(
         child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 30.w),
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -199,13 +203,16 @@ class _OnBoardingScreenState extends State<OnBoardingScreen>
                 ),
                 Image.asset(AssetConstants.onBoardBox,
                     height: 143.h, width: context.sw()),
-                SizedBox(height: 30.h),
+                SizedBox(height: 73.h),
                 Text(StringConstants.doughnuts, style: FontPalette.red36W700),
                 Text(StringConstants.whenEvrYouWant,
                     style: FontPalette.green28W500),
-                SizedBox(height: 20.h),
-                Text(StringConstants.dummyData3,
-                    textAlign: TextAlign.center, style: FontPalette.grey18W300),
+                SizedBox(height: 23.h),
+                Padding(
+                  padding:  EdgeInsets.symmetric(horizontal: 10.w),
+                  child: Text(StringConstants.dummyData3,
+                      textAlign: TextAlign.center, style: FontPalette.grey18W300),
+                ),
               ],
             )),
       ),
@@ -222,7 +229,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen>
                 Image.asset(AssetConstants.onBoardDonut,
                     height: 143.h, width: context.sw()),
                 SizedBox(height: 30.h),
-                Text(StringConstants.doughnuts, style: FontPalette.red36W700),
+                // Text(StringConstants.doughnuts, style: FontPalette.red36W700),
                 Text(StringConstants.joinAndSave,
                     style: FontPalette.green28W500),
                 SizedBox(height: 20.h),
