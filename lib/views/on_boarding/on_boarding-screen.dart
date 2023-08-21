@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:krispy_kreme/utils/extensions.dart';
 import 'package:krispy_kreme/utils/font_palette.dart';
+import 'package:krispy_kreme/utils/routes.dart';
 
 import '../../../utils/color_palette.dart';
 import '../../utils/constants.dart';
@@ -122,7 +123,9 @@ class _OnBoardingScreenState extends State<OnBoardingScreen>
                                 RoundedRectangleBorder>(RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(40.r),
                             ))),
-                        onPressed: () {},
+                        onPressed: () {
+                          NavRoutes.navToLogin(context);
+                        },
                         child: Text(StringConstants.login,
                             style: FontPalette.white14)),
                   ),
@@ -184,9 +187,10 @@ class _OnBoardingScreenState extends State<OnBoardingScreen>
                 ),
                 SizedBox(height: 23.h),
                 Padding(
-                  padding:  EdgeInsets.symmetric(horizontal: 10.w),
+                  padding: EdgeInsets.symmetric(horizontal: 10.w),
                   child: Text(StringConstants.dummyData4,
-                      textAlign: TextAlign.center, style: FontPalette.grey18W300),
+                      textAlign: TextAlign.center,
+                      style: FontPalette.grey18W300),
                 ),
               ],
             )),
@@ -209,9 +213,10 @@ class _OnBoardingScreenState extends State<OnBoardingScreen>
                     style: FontPalette.green28W500),
                 SizedBox(height: 23.h),
                 Padding(
-                  padding:  EdgeInsets.symmetric(horizontal: 10.w),
+                  padding: EdgeInsets.symmetric(horizontal: 10.w),
                   child: Text(StringConstants.dummyData3,
-                      textAlign: TextAlign.center, style: FontPalette.grey18W300),
+                      textAlign: TextAlign.center,
+                      style: FontPalette.grey18W300),
                 ),
               ],
             )),
@@ -229,10 +234,16 @@ class _OnBoardingScreenState extends State<OnBoardingScreen>
                 Image.asset(AssetConstants.onBoardDonut,
                     height: 143.h, width: context.sw()),
                 SizedBox(height: 30.h),
-                // Text(StringConstants.doughnuts, style: FontPalette.red36W700),
-                Text(StringConstants.joinAndSave,
+                Text(StringConstants.birthdays, style: FontPalette.red36W700),
+                Text(StringConstants.weLoveThem,
                     style: FontPalette.green28W500),
-                SizedBox(height: 20.h),
+                SizedBox(height: 23.h),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 10.w),
+                  child: Text(StringConstants.joinReward,
+                      textAlign: TextAlign.center,
+                      style: FontPalette.grey18W300),
+                ),
               ],
             )),
       ),

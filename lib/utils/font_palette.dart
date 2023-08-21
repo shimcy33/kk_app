@@ -9,17 +9,22 @@ class FontPalette {
   static const subFont = "Claude";
 
   ///14
-  static TextStyle white14 = TextStyle(
-      fontSize: 14.sp,
+  static TextStyle white14 =
+      TextStyle(fontSize: 14.sp, fontFamily: themeFont, color: Colors.white);
+
+  ///16
+  static TextStyle green16W500 = TextStyle(
+      fontWeight: FontWeight.w500,
+      fontSize: 16.sp,
       fontFamily: themeFont,
-      color: Colors.white);
+      color: ColorPalette.primaryColor);
+
   ///18
   static TextStyle grey18W300 = TextStyle(
       fontSize: 18.sp,
       fontFamily: themeFont,
       fontWeight: FontWeight.w300,
       color: ColorPalette.grey);
-  ///18
   static TextStyle grey18W400Underline = TextStyle(
       fontSize: 18.sp,
       fontFamily: themeFont,

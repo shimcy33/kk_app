@@ -1,6 +1,6 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:krispy_kreme/views/login/login_screen.dart';
 
 import '../views/on_boarding/on_boarding-screen.dart';
 import '../views/splash.dart';
@@ -8,6 +8,7 @@ import '../views/splash.dart';
 class RouteGenerator {
   static const String routeInitial = "/";
   static const String routeOnBoarding = "routeOnBoarding";
+  static const String routeLogin = "routeLogin";
   static const String routeError = "routeError";
 
   Route generateRoute(RouteSettings settings, {var routeBuilders}) {
@@ -16,6 +17,8 @@ class RouteGenerator {
         return _buildRoute(routeInitial, const SplashScreen());
       case routeOnBoarding:
         return _buildRoute(routeOnBoarding, const OnBoardingScreen());
+      case routeLogin:
+        return _buildRoute(routeLogin, const LoginScreen());
 
       default:
         return _buildRoute(routeError, const ErrorView());
@@ -46,5 +49,10 @@ class NavRoutes {
   static void navToOnBoarding(BuildContext context) {
     Navigator.of(context, rootNavigator: true)
         .pushNamed(RouteGenerator.routeOnBoarding);
+  }
+
+  static void navToLogin(BuildContext context) {
+    Navigator.of(context, rootNavigator: true)
+        .pushNamed(RouteGenerator.routeLogin);
   }
 }
