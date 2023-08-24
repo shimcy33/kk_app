@@ -11,6 +11,10 @@ class AssetConstants {
       "assets/icons/form_password_key_icon.svg";
   static const String formObscureIcon =
       "assets/icons/form_obscure_icon.svg";
+  static const String backIcon =
+      "assets/icons/back_icon.svg";
+  static const String forwardIcon =
+      "assets/icons/arrow_forward_icon.svg";
 }
 
 class StringConstants {
@@ -39,4 +43,35 @@ class StringConstants {
   static String password = "Password";
   static String forgotPwd = "I forgot my password";
   static String createAcct = "CREATE AN ACCOUNT";
+  static String back = "Back";
+  static String hello = "Hello!";
+  static String letsCreateAcct = "Lets create your account".toUpperCase();
+  static String email = "Email*";
+  static String confirmEmail = "Confirm Email*";
+  static String confirmPassword = "Confirm password*";
+  static String agreeTo = "I agree to the ";
+  static String termsCondition = "Terms & Conditions";
+  static String passwordStar = "Password*";
+  static String myAcct = "My Account".toUpperCase();
+  static String memNum = "Membership number: ";
+  static String rewNum = "Card number: ";
+  static String rewAcct = "Rewards Account".toUpperCase();
+  static String rewHistory = "Rewards history";
+  static String storedPayMethods = "Stored payment methods";
+  static String acctInfo = "Account information";
+  static String editAcctInfo = "Edit account information";
+  static String addressBook = "Address book";
+  static String myFav = "My favourites";
+  static String communication = "Communication".toUpperCase();
+  static String notifications = "Notifications";
+  static String commPreference = "Communication preferences";
+  static String helpFaq = "Help and FAQ".toUpperCase();
+  static String helpCenter = "Help center";
+  static String smilesInfo = "Smiles information";
+  static String privacyPolicy = "Privacy Policy";
+  static String termsAndCondition = "Terms and conditions";
+  static String contactUs = "Contact us";
+  static String signOut = "Sign out";
+  static String myOrders = "My Orders";
+
 }

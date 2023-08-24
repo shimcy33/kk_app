@@ -31,10 +31,28 @@ class FontPalette {
       fontWeight: FontWeight.w400,
       decoration: TextDecoration.underline,
       color: ColorPalette.grey);
+  static TextStyle grey18W400 = TextStyle(
+      fontSize: 18.sp,
+      fontFamily: themeFont,
+      fontWeight: FontWeight.w400,
+      color: ColorPalette.grey);
 
   ///28
   static TextStyle green28W500 = TextStyle(
       fontSize: 28.sp,
+      fontFamily: themeFont,
+      fontWeight: FontWeight.w500,
+      color: ColorPalette.primaryColor);
+  ///26
+  static TextStyle red26W700 = TextStyle(
+      fontSize: 26.sp,
+      fontFamily: subFont,
+      fontStyle: FontStyle.italic,
+      fontWeight: FontWeight.w700,
+      color: ColorPalette.red);
+  ///20
+  static TextStyle green20W500 = TextStyle(
+      fontSize: 20.sp,
       fontFamily: themeFont,
       fontWeight: FontWeight.w500,
       color: ColorPalette.primaryColor);

@@ -103,7 +103,9 @@ class _OnBoardingScreenState extends State<OnBoardingScreen>
                                 RoundedRectangleBorder>(RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(40.r),
                             ))),
-                        onPressed: () {},
+                        onPressed: () {
+                          NavRoutes.navToCreateAccount(context);
+                        },
                         child: Text(StringConstants.register,
                             style: FontPalette.white14)),
                   ),
