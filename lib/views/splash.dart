@@ -20,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     _timer = Timer(const Duration(milliseconds: 1000), () async {
-      NavRoutes.navToOnBoarding(context);
+      NavRoutes.navToRewardHomeScreen(context);
     });
 
     super.initState();

@@ -36,6 +36,24 @@ class FontPalette {
       fontFamily: themeFont,
       fontWeight: FontWeight.w400,
       color: ColorPalette.grey);
+  static TextStyle black18W400 = TextStyle(
+      fontSize: 18.sp,
+      fontFamily: themeFont,
+      fontWeight: FontWeight.w300,
+      color: Colors.black);
+  static TextStyle green18W500 = TextStyle(
+      fontSize: 18.sp,
+      fontFamily: themeFont,
+      fontWeight: FontWeight.w500,
+      color: ColorPalette.primaryColor);
+
+  ///20
+  static TextStyle white20W700 = TextStyle(
+      fontSize: 20.sp,
+      fontFamily: subFont,
+      fontStyle: FontStyle.italic,
+      fontWeight: FontWeight.w700,
+      color: Colors.white);
 
   ///28
   static TextStyle green28W500 = TextStyle(
@@ -43,6 +61,12 @@ class FontPalette {
       fontFamily: themeFont,
       fontWeight: FontWeight.w500,
       color: ColorPalette.primaryColor);
+  static TextStyle white28W500 = TextStyle(
+      fontSize: 28.sp,
+      fontFamily: themeFont,
+      fontWeight: FontWeight.w500,
+      color: Colors.white);
+
   ///26
   static TextStyle red26W700 = TextStyle(
       fontSize: 26.sp,
@@ -50,12 +74,20 @@ class FontPalette {
       fontStyle: FontStyle.italic,
       fontWeight: FontWeight.w700,
       color: ColorPalette.red);
+
   ///20
   static TextStyle green20W500 = TextStyle(
       fontSize: 20.sp,
       fontFamily: themeFont,
       fontWeight: FontWeight.w500,
       color: ColorPalette.primaryColor);
+
+  ///32
+  static TextStyle black32W500 = TextStyle(
+      fontSize: 32.sp,
+      fontFamily: themeFont,
+      fontWeight: FontWeight.w500,
+      color: Colors.black);
 
   ///36
   static TextStyle red36W700 = TextStyle(

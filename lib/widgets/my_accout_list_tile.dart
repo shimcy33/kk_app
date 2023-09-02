@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:krispy_kreme/utils/color_palette.dart';
 
 import '../utils/constants.dart';
 import '../utils/font_palette.dart';
@@ -10,8 +11,10 @@ class MyAccountListTile extends StatelessWidget {
   final double? topPadding;
   final double? bottomPadding;
   final Function()? onTap;
+  final TextStyle? style;
+  final Color? color;
 
-  const MyAccountListTile({Key? key, this.title, this.onTap, this.topPadding, this.bottomPadding}) : super(key: key);
+  const MyAccountListTile({Key? key, this.title, this.onTap, this.topPadding, this.bottomPadding ,this.style,this.color}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,10 +26,11 @@ class MyAccountListTile extends StatelessWidget {
           children: [
             Text(
               title ?? "",
-              style: FontPalette.grey18W300,
+              style: style??FontPalette.grey18W300,
             ),
             SvgPicture.asset(
               AssetConstants.forwardIcon,
+              color: color??ColorPalette.grey,
             ),
           ],
         ),

@@ -9,12 +9,15 @@ class AssetConstants {
   static const String formMailIcon = "assets/icons/form_mail_icon.svg";
   static const String formPasswordKeyIcon =
       "assets/icons/form_password_key_icon.svg";
-  static const String formObscureIcon =
-      "assets/icons/form_obscure_icon.svg";
-  static const String backIcon =
-      "assets/icons/back_icon.svg";
-  static const String forwardIcon =
-      "assets/icons/arrow_forward_icon.svg";
+  static const String formObscureIcon = "assets/icons/form_obscure_icon.svg";
+  static const String backIcon = "assets/icons/back_icon.svg";
+  static const String forwardIcon = "assets/icons/arrow_forward_icon.svg";
+  static const String homeDonutSmiley = "assets/icons/home_smiley_donut_icon.svg";
+  static const String homeSmiley = "assets/icons/home_smiley_icon.svg";
+  static const String homeBarcode = "assets/icons/home_barcode_icon.svg";
+  static const String homeDonut = "assets/icons/home_donut_icon.svg";
+  static const String homeBanner1 = "assets/icons/home_banner_two.svg";
+  static const String homeBanner2 = "assets/icons/home_banner_one.svg";
 }
 
 class StringConstants {
@@ -73,5 +76,13 @@ class StringConstants {
   static String contactUs = "Contact us";
   static String signOut = "Sign out";
   static String myOrders = "My Orders";
+  static String gdEvng = "Good evening";
+  static String addBox = "ADD BOX OR\nRECEIPT CODE";
+  static String showRewards = "SHOW YOUR\nREWARDS CARD";
+  static String whatsNew = "What’s new at";
+  static String deliveryClick = "Delivery. Click & Collect. On Demand. ".toUpperCase();
+  static String nowGetDonuts = "You can now get doughnuts to your door through the app!";
+  static String orderNow = "Order now";
+  static String needHelp = "Need help?";
 
 }

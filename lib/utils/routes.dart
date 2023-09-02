@@ -4,6 +4,7 @@ import 'package:krispy_kreme/views/login/login_screen.dart';
 
 import '../views/account/account_sceen.dart';
 import '../views/account/create_account_screen.dart';
+import '../views/home/rewards_home.dart';
 import '../views/on_boarding/on_boarding-screen.dart';
 import '../views/splash.dart';
 
@@ -13,6 +14,7 @@ class RouteGenerator {
   static const String routeLogin = "routeLogin";
   static const String routeCreateAcct = "routeCreateAcct";
   static const String routeAccountScreen = "routeAccountScreen";
+  static const String routeRewardHomeScreen = "routeRewardHomeScreen";
   static const String routeError = "routeError";
 
   Route generateRoute(RouteSettings settings, {var routeBuilders}) {
@@ -27,6 +29,8 @@ class RouteGenerator {
         return _buildRoute(routeCreateAcct, const CreateAccountScreen());
       case routeAccountScreen:
         return _buildRoute(routeAccountScreen, const AccountScreen());
+      case routeRewardHomeScreen:
+        return _buildRoute(routeRewardHomeScreen, const RewardsHomeScreen());
 
       default:
         return _buildRoute(routeError, const ErrorView());
@@ -72,5 +76,9 @@ class NavRoutes {
   static void navToAccountScreen(BuildContext context) {
     Navigator.of(context, rootNavigator: true)
         .pushNamed(RouteGenerator.routeAccountScreen);
+  }
+  static void navToRewardHomeScreen(BuildContext context) {
+    Navigator.of(context, rootNavigator: true)
+        .pushNamed(RouteGenerator.routeRewardHomeScreen);
   }
 }
